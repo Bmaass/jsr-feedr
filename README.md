@@ -2,8 +2,6 @@
 
 ### Overview
 
-YO!YO YO!!
-
 The web is an ever growing medium and it is getting more and more difficult to filter useful information. In our journey to writing beautiful JavaScript, we have come and will come across a great many reference points that will guide our learning. This is where personal feeds come in very useful. Online feeds are like to-do lists in that they can be infinitely personalized and there is not one solution that works for everybody.
 
 For our Unit 2 project we will build __Feedr__, a personalized feed reader. Our feed reader will pull feeds from our favorite blogs. The user will be able to filter between publications through the dropdown on the header menu. Clicking/tapping on one of the articles will load a pop up with more information. The user from that point will be able to either dismiss the additional information or go to the referenced article.
