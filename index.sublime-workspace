@@ -1,0 +1,508 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"t",
+				"td\tTag"
+			],
+			[
+				"list",
+				"list-style-type\tproperty"
+			],
+			[
+				"tex",
+				"text-center"
+			],
+			[
+				"pad",
+				"pad80"
+			],
+			[
+				"font-e",
+				"font-weight\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"ba",
+				"background\tproperty"
+			],
+			[
+				"back",
+				"background-repeat\tproperty"
+			],
+			[
+				"bac",
+				"background-position\tproperty"
+			],
+			[
+				"a",
+				"align-items\tproperty"
+			],
+			[
+				"d",
+				"display\tproperty"
+			],
+			[
+				"r",
+				"right\tproperty"
+			],
+			[
+				"color",
+				"colorCode"
+			],
+			[
+				"s",
+				"script\tTag"
+			],
+			[
+				"sw",
+				"swatchParent"
+			],
+			[
+				"te",
+				"teal"
+			],
+			[
+				"fle",
+				"flex-grow\tproperty"
+			],
+			[
+				"wid",
+				"width100"
+			],
+			[
+				"height",
+				"height20"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"w",
+				"width100"
+			],
+			[
+				"width",
+				"width100"
+			],
+			[
+				"border",
+				"border-radius\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"bor",
+				"border-radius\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"marg",
+				"margin-bottom\tproperty"
+			],
+			[
+				"l",
+				"li\tTag"
+			],
+			[
+				"ma",
+				"margin\tproperty"
+			],
+			[
+				"REIT",
+				"REITStock"
+			],
+			[
+				"padd",
+				"padding-top\tproperty"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"h",
+				"hidden\toverflow"
+			],
+			[
+				"RE",
+				"REITPrefSec"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"bakc",
+				"background-color\tproperty"
+			],
+			[
+				"margin-",
+				"margin-bottom\tproperty"
+			],
+			[
+				"flex-",
+				"flex-direction\tproperty"
+			],
+			[
+				"footer",
+				"Footer-BgColor"
+			],
+			[
+				"ty",
+				"typeRage"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"j",
+				"jQuery"
+			],
+			[
+				"com",
+				"commitmentWqoz_fund"
+			],
+			[
+				"magi",
+				"margin-bottom\tproperty"
+			],
+			[
+				"i",
+				"important"
+			],
+			[
+				"in",
+				"initial\twidth"
+			],
+			[
+				"trans",
+				"transition\tproperty"
+			],
+			[
+				"margi",
+				"margin\tproperty"
+			],
+			[
+				"p",
+				"padding\tproperty"
+			],
+			[
+				"margin",
+				"margin-right\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"min",
+				"min-height\tproperty"
+			],
+			[
+				"backroun",
+				"background-size\tproperty"
+			],
+			[
+				"cont",
+				"container-fluid"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"Le",
+				"letter-spacing\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"Back",
+				"background-color\tproperty"
+			],
+			[
+				"Bac",
+				"background-position\tproperty"
+			],
+			[
+				"co",
+				"cover\tbackground-size"
+			],
+			[
+				"FLEX",
+				"flex-direction\tproperty"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"txt",
+				"text-align\tproperty"
+			],
+			[
+				"max-",
+				"max-width\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/billmaass/Documents/Project2/index.html",
+		"/Users/billmaass/Documents/Project2/README.md",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/Kiplinger-Form-Embed",
+		"/Users/billmaass/Downloads/EB_2019_04_06_OI_Issue_50_Email.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/rtl.html",
+		"/Users/billmaass/Desktop/email.html",
+		"/Users/billmaass/Downloads/EB_2019_03_23_OI_Issue_49_Email.html",
+		"/Users/billmaass/Documents/jsr-project1/js/main.js",
+		"/Users/billmaass/Documents/jsr-project1/README.md",
+		"/Users/billmaass/Documents/jsr-project1/index.html",
+		"/Users/billmaass/Creative Cloud Files/Secret Squirrel/Desktop Feedback/Menu/Table.html",
+		"/Users/billmaass/Creative Cloud Files/Secret Squirrel/Desktop Feedback/Menu/Menu-Hover.html",
+		"/Users/billmaass/Creative Cloud Files/IncomePlus Fund/Landing Page/HMTL/IPF-LP-01.html",
+		"/Users/billmaass/Downloads/EB_2019_03_09_OI_Issue_48_Email.html",
+		"/Users/billmaass/Dropbox/ART Identities/Digital Brand Guide/OriginBrandGuide.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Emails/Templates/Master-Template-2-0.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Emails/Templates/ProductLaunch-1-0.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Emails/Origin Insights/Issue 47/EB_2019_02_23_OI_Issue_47_A_B_Test_Email.html",
+		"/Users/billmaass/Creative Cloud Files/Website/Redesign/Portfolio Module/PortMod-02.html",
+		"/Users/billmaass/Creative Cloud Files/Website/Redesign/Portfolio Module/PortMod-03.html",
+		"/Users/billmaass/Creative Cloud Files/Website/Redesign/Portfolio Module/css/bootstrap.css",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Emails/Templates 1-3-19/OI-Template-2-1.html",
+		"/Users/billmaass/Creative Cloud Files/Website/Redesign/Portfolio Module/PortMod-01.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Emails/Templates/3-Col-IMG-P.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/origin-website/wp-content/themes/origin-investments/assets/manifest-example.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/origin-website/wp-content/themes/origin-investments/assets/manifest.json",
+		"/Users/billmaass/Creative Cloud Files/IncomePlus Fund/WL Launch Email/table.html",
+		"/Users/billmaass/Downloads/EB_2019_02_09_OI_Issue_46_Email.html",
+		"/Users/billmaass/Creative Cloud Files/Website/Shortcode Widgets/QOZ-Widget-01.html",
+		"/Users/billmaass/Desktop/EB_2019_01_26_OI_Issue_45_Email.html",
+		"/Users/billmaass/Creative Cloud Files/Origin Insights/Archive/OI-43.html",
+		"/Users/billmaass/Creative Cloud Files/Origin Insights/Archive/OI-44.html",
+		"/Users/billmaass/Desktop/delete.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Emails/Unsub Defaults /Unsubscribe.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Emails/Letter Module/Letter-Module.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Emails/Email on Acid Templates/Seashell_EOA_template/Seashells_Inline.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/12-19-18/FormStyles-12-19-18.css",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/mktoFormsScripts-V1.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/OI-Inline-Styles.css",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/12-19-18/OiTemplate2-121918.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/12-19-18/MasterTemplate2-121918.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/mkto-Inline.css",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/mktoFormStyles-V1.css",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/gmail-oi.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/ooi0098.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/marketo-form.css",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/mkto-Forms-Scripts-V1.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/shell.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/OI-V2-0-Featured-Article-Move.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/MasterHeader02.html",
+		"/Users/billmaass/Desktop/OI.html",
+		"/Users/billmaass/origin-website/wp-content/themes/origin-investments/templates/fund_tile_income.php",
+		"/Users/billmaass/origin-website/wp-content/themes/origin-investments/template-investments-properties.php",
+		"/Users/billmaass/origin-website/wp-content/themes/origin-investments/assets/styles/layouts/_template_investments_properties.scss",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/Password.js",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Emails/EOA Adapted Templates/MasterTemplate-V2-0.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Emails/EOA Adapted Templates/MasterTemplate-V2-0-01.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Emails/EOA Adapted Templates/mkto-module-Test.html",
+		"/Users/billmaass/origin-website/wp-content/themes/origin-investments/templates/footer.php",
+		"/Users/billmaass/origin-website/wp-content/themes/origin-investments/template-generic.php",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/Gmail-2col.html",
+		"/Users/billmaass/origin-website/wp-content/themes/origin-investments/templates/fund_list_income.php",
+		"/Users/billmaass/origin-website/wp-content/themes/origin-investments/templates/product_tile_1.php",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/OI-Header.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/Master-Template-03.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/Master-Template-01.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/Master-Template-02.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/structure-02.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/Master-Template-03\\.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/OI.css",
+		"/Users/billmaass/Creative Cloud Files/MISC/Code/spinner-remove.html",
+		"/Users/billmaass/Creative Cloud Files/QOZ Launch/Email/Unsub.html",
+		"/Users/billmaass/Creative Cloud Files/QOZ Launch/Webinar/Email/Webinar-Email.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/Forms/HTML/Marketo-Form-V1-1.html",
+		"/Users/billmaass/Creative Cloud Files/QOZ Launch/Landing Page/QOZ-LandingPage-V1-2.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/BM Email Test Program.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/Structure.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/FeaturedArticle-02.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/box-shadow.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/photoL-Module.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/FeaturedArticle.html",
+		"/Users/billmaass/Creative Cloud Files/Marketo/HTML Tests/Email Footer Links.html",
+		"/Users/billmaass/Creative Cloud Files/Blog/201810/QOZ/table.html",
+		"/Users/billmaass/origin-website/wp-content/themes/origin-investments/templates/head.php"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

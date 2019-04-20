@@ -1,88 +1,97 @@
-/*
-  Please add all Javascript code to this file.
-  
-*/
-
-// API Info
-const baseUrl ="https://";
-const API_KEY = "53c71d5738fe4b9185b0ba6799906068";
-
 //DOM elements
 const mainContainer = document.querySelector('#main');
-const article = document.querySelector('.article');
-const popUp = document.querySelector('.popUp');
+const popUp = document.querySelector('#popUp');
 const search = document.querySelector('#search');
 const feedr = document.querySelector('h1');
+const closePopUp = document.querySelector('.closePopUp');
 
 
-// API request
+// Create API request variable
+const request = new XMLHttpRequest();
+// Open a new connection using GET request on URL endpoint
+request.open('GET', `https://newsapi.org/v2/top-headlines?country=us&apiKey=53c71d5738fe4b9185b0ba6799906068`, true);
+// onload rung the onSuccess function
+request.onload = onSuccess;
+// onError run onError function
+request.onerror = onError;
+// send request
+request.send();
 
-var url = 'https://newsapi.org/v2/top-headlines?' +
-          'country=us&' +
-          'apiKey=53c71d5738fe4b9185b0ba6799906068';
-var req = new Request(url);
-fetch(req)
-    .then(function(response) {
-        console.log(response.json());
-        
+function onSuccess(){
+  // create variable with data parsed into an array of javascript objects
+  const data = JSON.parse(request.response);
+  // check for errors
+  if(request.status >= 200 && request.status < 400) {
+    console.log(data);
+    console.log("Success: ", request.status);
+  } else {
+    console.log("Error: ", request.status);
+  }
+  data.articles.forEach( function(current){
+    //create article
+    const article = document.createElement('article');
+    article.classList = "article";
+    //create featured image section
+    const featImgSection = document.createElement('section');
+    featImgSection.classList = "featuredImage";
+    //create image
+    const featImg = document.createElement('img');
+    featImg.setAttribute('src', current.urlToImage);
+    //create Article Content section
+    const articleContentSection = document.createElement('section');
+    articleContentSection.classList = "articleContent";
+    //create link
+    const link = document.createElement('a');
+    link.setAttribute('href', "#");
+    //create article title
+    const articleTitle = document.createElement('h3');
+    articleTitle.innerText = current.title;
+    //create source section
+    const source = document.createElement('section');
+    source.classList = "source";
+    source.innerText = current.source.name;
+    // //create clearfix
+    const clearfix = document.createElement('div');
+    clearfix.classList = "clearfix";
+
+    //append to main container
+    mainContainer.appendChild(article);
+    article.appendChild(featImgSection);
+    featImgSection.appendChild(featImg);
+    article.appendChild(articleContentSection);
+    articleContentSection.appendChild(link);
+    link.appendChild(articleTitle);
+    article.appendChild(source);
+    article.appendChild(clearfix);
+
+  });
+
+  const articleTag = document.querySelectorAll('.article');
+
+  console.log(articleTag);
+
+  articleTag.forEach( function(current) {
+    current.addEventListener('click', function(){
+      event.preventDefault();
+      //console.log("Hi!");
+      launchPop();
     })
-
-console.log(req.status);
-
-function onError(){
-  console.log("it broken")
+  });
 }
 
+function launchPop(){
+  popUp.classList = "";
+}
+
+closePopUp.addEventListener('click', function(){
+  event.preventDefault();
+  popUp.classList = "hidden";
+})
 
 
-
-/////////////////////
-
-// CREATE ARTICLE  //
-
-/////////////////////
-
-
-// create article
-// const article = document.createElement('article');
-// article.classList = "article";
-
-// create featured image section
-// const featImgSection = document.createElement('section');
-// featImgSection.classList = "featuredImage";
-
-// create image 
-// const featImg = document.createElement('img');
-// featImg.setAttribute('src', current.API_ARTICLE.urlToImage);
-
-// create Article Content section
-// const articleContentSection = document.createElement('section');
-// articleContentSection.classList = "articleContent";
-
-// create link
-// const link = document.createElement('a');
-// link.setAttribute('href', current.API_LINK.url);
-
-// create article title
-// const articleTitle = document.createElement('h3');
-// articleTitle.innerText = current.API_.title;
-
-// create source
-// const source = document.createElement('section');
-// source.classList = "impressions";
-// source.innerText = current.API_.source.name;
-
-// append to main container
-// mainContainer.appendChild(article);
-// artice.appendChild(featImgSection);
-// featImgSection.appendChild(featImg);
-// artice.appendChild(articleContentSection);
-// articleContentSection.appendChild(link);
-// link.appendChild(articleTitle);
-// artice.appendChild(source);
-
-
-
+function onError(){
+  console.log("Error")
+}
 
 
 
@@ -100,7 +109,3 @@ function onError(){
 // search UI has to work but dont have to make search functionality work (toggle .active class on #search)
 // hide the #popUp when the user clicks the X
 // clicking the feedr logo displays the default feed
-
-
-
-

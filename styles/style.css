@@ -201,11 +201,12 @@ nav ul ul li {
   float: left;
   margin: 1.5%;
   max-width: 60px;
+  height: 60px;
+  overflow: hidden;
 }
 
 .article .featuredImage img {
   max-width: 100%;
-  border-radius: 50px;
 }
 
 .article .articleContent {
@@ -227,10 +228,10 @@ nav ul ul li {
   color: #666;
 }
 
-.article .impressions {
+.article .source {
   width: 15%;
   float: right;
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 15px;
   text-align: right;
   color: #097FB2;
