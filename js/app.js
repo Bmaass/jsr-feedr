@@ -4,7 +4,7 @@ const popUp = document.querySelector('#popUp');
 const search = document.querySelector('#search');
 const feedr = document.querySelector('h1');
 const closePopUp = document.querySelector('.closePopUp');
-
+//let data = [];
 
 // Create API request variable
 const request = new XMLHttpRequest();
@@ -27,6 +27,13 @@ function onSuccess(){
   } else {
     console.log("Error: ", request.status);
   }
+  popUp.classList ="loader";
+  closePopUp.style = "opacity: 0";
+  setTimeout (function(){
+    popUp.classList ="hidden";
+    closePopUp.style = "opacity: 1";
+  },300);
+
   data.articles.forEach( function(current){
     //create article
     const article = document.createElement('article');
@@ -68,31 +75,56 @@ function onSuccess(){
 
   const articleTag = document.querySelectorAll('.article');
 
-  console.log(articleTag);
-
-  articleTag.forEach( function(current) {
-    current.addEventListener('click', function(){
+  for (i = 0; i < articleTag.length; i++ ){
+    // log the index of each article
+    let articleIndex = i;
+    //add event listener on each article
+    articleTag[i].addEventListener('click', function(){
       event.preventDefault();
-      //console.log("Hi!");
-      launchPop();
+      launchPop(articleIndex);
     })
-  });
+  }
+
+  function launchPop(index){
+    // show element by removing hidden class
+    popUp.classList = "";
+    // add title text to h1
+    popUp.querySelector("h1").innerText = data.articles[index].title;
+    // Remove extra data from description string
+    const content = data.articles[index].content;
+    const trimContent = content.split("[")[0];
+    popUp.querySelector("p").innerText = trimContent;
+    // add link to href
+    let url = data.articles[index].url;
+    popUp.querySelector(".popUpAction").setAttribute("href", `${url}`);
+    // add source to button text
+    popUp.querySelector(".popUpAction").innerText = `Read more on ${data.articles[index].source.name} `;
+  }
+
 }
 
-function launchPop(){
-  popUp.classList = "";
+
+
+function populatePopUp(){
+  //title = article.querySelector("h3").innerText;
+  //console.log(this);
+
 }
 
+//when you click this article, grab it's title and pass it into the popup h1
+
+
+
+// Close pop up
 closePopUp.addEventListener('click', function(){
   event.preventDefault();
   popUp.classList = "hidden";
 })
 
-
+//Display error onError
 function onError(){
   console.log("Error")
 }
-
 
 
 
