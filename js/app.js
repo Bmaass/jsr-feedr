@@ -4,14 +4,18 @@ const popUp = document.querySelector('#popUp');
 const search = document.querySelector('#search');
 const feedr = document.querySelector('h1');
 const closePopUp = document.querySelector('.closePopUp');
-let userInput = "top-headlines";
+let detaultURL = "";
+const API_KEY = "apiKey=53c71d5738fe4b9185b0ba6799906068";
+let urlSources = ``;
+let country = "country=us&";
+const baseURL = "https://newsapi.org/v2/top-headlines?";
 
 
 function getNews(source){
   // Create API request variable
   const request = new XMLHttpRequest();
   // Open a new connection using GET request on URL endpoint
-  request.open('GET', `https://newsapi.org/v2/${source}?country=us&apiKey=53c71d5738fe4b9185b0ba6799906068`, true);
+  request.open('GET', `${baseURL}${country}${source}${API_KEY}`, true);
   // onload rung the onSuccess function
   request.onload = onSuccess;
   // onError run onError function
@@ -34,7 +38,7 @@ function getNews(source){
     setTimeout (function(){
       popUp.classList ="hidden";
       closePopUp.style = "opacity: 1";
-    },300);
+    },1000);
 
     data.articles.forEach( function(current){
       //create article
@@ -43,15 +47,13 @@ function getNews(source){
       //create featured image section
       const featImgSection = document.createElement('section');
       featImgSection.classList = "featuredImage";
-      //create image
-      const featImg = document.createElement('img');
-      featImg.setAttribute('src', current.urlToImage);
+      featImgSection.style = `background-image: url('${current.urlToImage}')`;
       //create Article Content section
       const articleContentSection = document.createElement('section');
       articleContentSection.classList = "articleContent";
       //create author
       const author = document.createElement('h6');
-      if (current.author == null) {
+      if (current.author == null || current.author == "" ) {
         author.innerText = current.source.name;
       } else {
         author.innerText = "By: " + current.author;
@@ -73,7 +75,6 @@ function getNews(source){
       //append new DOM elements
       mainContainer.appendChild(article);
       article.appendChild(featImgSection);
-      featImgSection.appendChild(featImg);
       article.appendChild(articleContentSection);
       articleContentSection.appendChild(link);
       link.appendChild(articleTitle);
@@ -113,7 +114,7 @@ function getNews(source){
 
   }
 
-} getNews(userInput);
+} getNews(detaultURL);
 
 
 
@@ -122,41 +123,46 @@ function getNews(source){
 // clicking the feedr logo displays the default feed
 feedr.addEventListener("click", function(){
   event.preventDefault();
-  onSuccess();
+  getNews();
 });
 
-// clicking the feedr logo displays the default feed
+// search function expand
 search.querySelector('a').addEventListener("click", function(){
   event.preventDefault();
   search.classList.toggle('active');
 });
 
-// // clicking the feedr logo displays the default feed
-// search.querySelector('input').addEventListener("submit", function(){
-//   event.preventDefault();
-//   userInput = this.value;
-//   console.log(this);
-//   console.log(userInput);
-// });
 
-const sourceInput = document.querySelector('.source')
-const userSelect = sourceInput.querySelectorAll('a');
+const sourceInput = document.querySelectorAll('.userSource a');
+const sourceLabel = document.querySelector('nav a');
+//console.log(sourceInput[0], sourceInput[1], sourceInput[2]);
 
+sourceInput.forEach( function(currentA){
+ currentA.addEventListener('click', function(){
+   sourceLabel.innerText = `News Source: ${currentA.innerText}`;
+   mainContainer.innerHTML = "";
+   changeSource();
+   //console.log(currentA);
+ });
+});
 
-// source.forEach{
-//
-// }
-//
-// userSelect[0].addEventListener('click', function() {
-//
-//   source.parentNode.innerText = `News Source: ${sourceName}`;
-//
-//
-// });
-
-
-
-
+function changeSource(){
+  if (sourceLabel.innerText === "News Source: CNN"){
+    console.log('source 1 change');
+    country = "";
+    getNews('sources=cnn&');
+  } else if (sourceLabel.innerText === "News Source: BBC"){
+    console.log('source 2 change');
+    country = "";
+    getNews('sources=bbc-news&');
+  } else if (sourceLabel.innerText === "News Source: Fake News") {
+    console.log('source 3 change');
+    country = "";
+    getNews('sources=fox-news&');
+  } else {
+    console.log('default');
+  }
+}
 
 // Close pop up
 closePopUp.addEventListener('click', function(){

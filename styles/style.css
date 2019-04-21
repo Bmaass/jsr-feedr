@@ -1,4 +1,12 @@
 /* General styles */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: #efefef;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -12,6 +20,8 @@
   width: 100%;
   height: 100%;
   background:  #fff;
+  padding: 20px;
+  z-index: 11;
 }
 
 #popUp .closePopUp {
@@ -58,11 +68,13 @@
 
 /* Header styles */
 header {
-  background-color: blue;
+  background-color: #222;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
+  padding: 0 20px;
 }
 
 header h1 {
@@ -88,8 +100,8 @@ header nav {
 
 /* Search bar */
 header #search {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   right: 20px;
   top: 10px;
@@ -102,7 +114,7 @@ header #search a {
 }
 
 header #search a:hover {
-  background: #CC0020;
+  background: #333;
 }
 
 header #search img {
@@ -112,7 +124,7 @@ header #search img {
 
 header #search input {
   position: absolute;
-  right: 20px;
+  right: 41px;
   /*top: 10px;*/
   padding: 8px 0;
   width: 0;
@@ -121,13 +133,13 @@ header #search input {
 }
 
 header #search.active input {
-  width: 160px;
-  padding: 8px 10px;
+  width: 240px;
+  padding: 9px 10px;
   visibility: visible;
 }
 
 header #search.active a {
-  background: #CC0020;
+  background: #444;
 }
 
 header nav a {
@@ -142,20 +154,20 @@ header nav a {
 
 header nav a:hover {
   background-color: #fff;
-  color: #CC0020;
+  color: #000;
 }
 
 nav ul {
 	padding:0;
 	margin:0;
-  margin-right: 30px;
+  margin-right: 50px;
 	list-style: none;
 	position: relative;
 	}
 
 nav ul li {
 	display:inline-block;
-	background-color: #CC0020;
+	background-color: #444;
   position: relative;
 }
 
@@ -163,7 +175,7 @@ nav ul ul {
 	display: none;
 	position: absolute;
 	top: 40px;
-  right: -30px;
+  right: -50px;
 }
 
 /* Display Dropdowns on Hover */
@@ -173,7 +185,7 @@ nav ul li:hover > ul {
 
 /* First Tier Dropdown */
 nav ul ul li {
-	width:170px;
+	width:221px;
 	float:none;
 	display:list-item;
 	position: relative;
@@ -181,27 +193,38 @@ nav ul ul li {
 
 /* Main Section */
 #main {
-  margin-top: 65px;
+  margin-top: 45px;
+  padding: 20px;
 }
 
 /* Individual Article Styling */
 .article {
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #efefef;
   transition: 0.2s all;
+  border-radius: 6px;
+  background: #fff;
+  margin: 20px 0;
+  cursor: pointer;
+
 }
 
 .article:hover {
-  padding: 0 2%;
-  background-color: #eee;
+  box-shadow: 0px 0px 30px #00000020;
+  transition: 0.2s all;
+  //border: 1px solid blue;
+  transform: scale(1.02);
 }
 
 .article .featuredImage {
-  width: 12%;
+  width: 20%;
   float: left;
-  margin: 1.5%;
-  max-width: 60px;
-  height: 60px;
-  overflow: hidden;
+  //max-width: 150px;
+  height: 150px;
+  border-radius: 6px 0 0 6px;
+  background-color: #ccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .article .featuredImage img {
@@ -209,8 +232,9 @@ nav ul ul li {
 }
 
 .article .articleContent {
-  width: 70%;
+  width: 60%;
   float: left;
+  padding: 10px 30px;
 }
 
 .article .articleContent a {
@@ -219,7 +243,7 @@ nav ul ul li {
 
 .article .articleContent h3 {
   margin-bottom: 0;
-  color: #FE052C;
+  color: #000000;
 }
 
 .article .articleContent h6 {
@@ -228,10 +252,10 @@ nav ul ul li {
 }
 
 .article .source {
-  width: 15%;
+  width: 20%;
   float: right;
-  font-size: 20px;
-  margin-top: 15px;
+  font-size: 15px;
+  padding: 30px;
   text-align: right;
-  color: #097FB2;
+  color: #999;
 }
