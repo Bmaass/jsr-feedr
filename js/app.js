@@ -9,7 +9,8 @@ const API_KEY = "apiKey=53c71d5738fe4b9185b0ba6799906068";
 let urlSources = ``;
 let country = "country=us&";
 const baseURL = "https://newsapi.org/v2/top-headlines?";
-
+const sourceInput = document.querySelectorAll('.userSource a');
+const sourceLabel = document.querySelector('nav a');
 
 function getNews(source){
   // Create API request variable
@@ -123,7 +124,7 @@ function getNews(source){
 // clicking the feedr logo displays the default feed
 feedr.addEventListener("click", function(){
   event.preventDefault();
-  getNews();
+  getNews(detaultURL);
 });
 
 // search function expand
@@ -132,17 +133,11 @@ search.querySelector('a').addEventListener("click", function(){
   search.classList.toggle('active');
 });
 
-
-const sourceInput = document.querySelectorAll('.userSource a');
-const sourceLabel = document.querySelector('nav a');
-//console.log(sourceInput[0], sourceInput[1], sourceInput[2]);
-
 sourceInput.forEach( function(currentA){
  currentA.addEventListener('click', function(){
    sourceLabel.innerText = `News Source: ${currentA.innerText}`;
    mainContainer.innerHTML = "";
    changeSource();
-   //console.log(currentA);
  });
 });
 
@@ -151,7 +146,7 @@ function changeSource(){
     console.log('source 1 change');
     country = "";
     getNews('sources=cnn&');
-  } else if (sourceLabel.innerText === "News Source: BBC"){
+  } else if (sourceLabel.innerText === "News Source: BBC News"){
     console.log('source 2 change');
     country = "";
     getNews('sources=bbc-news&');
