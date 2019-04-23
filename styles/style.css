@@ -257,4 +257,7 @@ nav ul ul li {
   padding: 30px;
   text-align: right;
   color: #999;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }

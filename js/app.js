@@ -4,13 +4,16 @@ const popUp = document.querySelector('#popUp');
 const search = document.querySelector('#search');
 const feedr = document.querySelector('h1');
 const closePopUp = document.querySelector('.closePopUp');
-let detaultURL = "";
-const API_KEY = "apiKey=53c71d5738fe4b9185b0ba6799906068";
-let urlSources = ``;
-let country = "country=us&";
-const baseURL = "https://newsapi.org/v2/top-headlines?";
 const sourceInput = document.querySelectorAll('.userSource a');
 const sourceLabel = document.querySelector('nav a');
+
+// API URL Components
+const API_KEY = "apiKey=53c71d5738fe4b9185b0ba6799906068";
+let urlSources = "";
+let detaultURL = "";
+let country = "country=us&";
+const baseURL = "https://newsapi.org/v2/top-headlines?";
+
 
 function getNews(source){
   // Create API request variable
@@ -116,10 +119,6 @@ function getNews(source){
   }
 
 } getNews(detaultURL);
-
-
-
-
 
 // clicking the feedr logo displays the default feed
 feedr.addEventListener("click", function(){
